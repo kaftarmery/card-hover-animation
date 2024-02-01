@@ -1,6 +1,7 @@
 import { AnimatedCardTwo } from "./AnimatedCardTwo";
 import { AnimatedCard } from "./AnimatedCard";
 import { AnimatedCardThree } from "./AnimatedCardThree";
+import { FlipCard } from "./Cards/FlipCard";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <AnimatedCard />
         {/* <AnimatedCardTwo /> */}
         <AnimatedCardThree />
+        <FlipCard />
       </div>
     </div>
   );
