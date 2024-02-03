@@ -4,7 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        gray: "#242424",
+        gray: "#191919",
+        "dirty-gray": "#1B1B1B",
+
+        "light-gray": "",
+      },
+      fontFamily: {
+        PPEditorial: ["PPEditorial", "sans"],
       },
     },
   },

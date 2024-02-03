@@ -7,16 +7,16 @@ import { BackgroundPink } from "./BackgroundPink";
 export const AnimatedCard = () => {
   return (
     <motion.div
-      // whileHover="hover"
-      // variants={{
-      //   hover: {
-      //     scale: 1.05,
-      //   },
-      // }}
-      // transition={{
-      //   duration: 1,
-      //   ease: "backInOut",
-      // }}
+      whileHover="hover"
+      variants={{
+        hover: {
+          scale: 1.05,
+        },
+      }}
+      transition={{
+        duration: 1,
+        ease: "backInOut",
+      }}
       className="relative h-96 w-80 shrink-0 overflow-hidden rounded-xl bg-gray p-8"
     >
       <div className="relative z-10 text-white">
