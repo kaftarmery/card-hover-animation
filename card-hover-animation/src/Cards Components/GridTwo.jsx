@@ -4,15 +4,16 @@ import { motion } from "framer-motion";
 export const GridTwo = () => {
   return (
     <motion.div
-      className="bg-natural-900 grid shrink-0 grid-2 overflow-hidden p-8 relative"
+      className="bg-natural-900 grid shrink-0 grid-2 overflow-hidden relative"
       whileHover="hover"
       variants={{
-        hover: {
-          scale: 1.05,
-        },
+        scale: 1,
+        // hover: {
+        //   scale: 1,
+        // },
       }}
       transition={{
-        duration: 1,
+        duration: 2,
         ease: "backInOut",
       }}
     >
@@ -28,12 +29,12 @@ export const GridTwo = () => {
         }}
       >
         <motion.svg
-          width="320"
-          height="384"
+          width="360"
+          height="480"
           viewBox="0 0 320 384"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute inset-0 z-0"
+          className=" m-auto"
           ariants={{
             hover: {
               scale: 4,
@@ -44,9 +45,9 @@ export const GridTwo = () => {
             ease: "backInOut",
             delay: 0.4,
           }}
-          animate={{
-            rotate: 180,
-          }}
+          // animate={{
+          //   rotate: 180,
+          // }}
         >
           {/* the circles */}
           <motion.circle

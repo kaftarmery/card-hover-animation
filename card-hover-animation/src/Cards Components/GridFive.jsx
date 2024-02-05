@@ -1,5 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
+
 export const GridFive = () => {
   return (
     <div className="text-white shrink-0 grid grid-5 justify-center overflow-hidden items-center relative">

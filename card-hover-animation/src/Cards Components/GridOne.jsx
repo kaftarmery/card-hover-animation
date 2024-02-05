@@ -1,6 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
-import PhotoOne from "/src/assets/grainy-sphere.png";
+import GrainySphere from "/src/assets/grainy-sphere.png";
 
 export const GridOne = () => {
   return (
@@ -14,7 +13,7 @@ export const GridOne = () => {
           repeat: Infinity,
         }}
         className="w-[50%] h-[auto] bg-cover justify-center absolute inset-0 m-auto"
-        style={{ backgroundImage: `url(${PhotoOne})` }}
+        style={{ backgroundImage: `url(${GrainySphere})` }}
       ></motion.div>
     </div>
   );
