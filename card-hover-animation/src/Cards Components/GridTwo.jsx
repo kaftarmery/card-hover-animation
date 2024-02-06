@@ -4,13 +4,14 @@ import { motion } from "framer-motion";
 export const GridTwo = () => {
   return (
     <motion.div
-      className="bg-natural-900 grid shrink-0 grid-2 overflow-hidden relative"
+      className="bg-natural-900  grid shrink-0 grid-2 overflow-hidden justify-center relative"
       whileHover="hover"
+      // variants={{
+
       variants={{
-        scale: 1,
-        // hover: {
-        //   scale: 1,
-        // },
+        hover: {
+          scale: 1,
+        },
       }}
       transition={{
         duration: 2,
@@ -23,18 +24,18 @@ export const GridTwo = () => {
             scale: 1,
           },
         }}
-        trasition={{
-          duration: 1,
+        transition={{
+          duration: 3,
           ease: "backInOut",
         }}
       >
         <motion.svg
-          width="360"
-          height="480"
-          viewBox="0 0 320 384"
+          width="627"
+          height="346"
+          viewBox="0 0 627 346"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className=" m-auto"
+          className=" m-auto  inset-2"
           ariants={{
             hover: {
               scale: 4,
@@ -45,28 +46,8 @@ export const GridTwo = () => {
             ease: "backInOut",
             delay: 0.4,
           }}
-          // animate={{
-          //   rotate: 180,
-          // }}
         >
-          {/* the circles */}
-          <motion.circle
-            variants={{
-              hover: {
-                scale: 9,
-              },
-            }}
-            transition={{
-              duration: 1,
-              ease: "backInOut",
-              delay: 0.3,
-            }}
-            cx="159.5"
-            cy="192.5"
-            r="123"
-            fill="#282828"
-          />
-
+          {/* the actual circles of the SVG */}
           <motion.circle
             variants={{
               hover: {
@@ -78,8 +59,41 @@ export const GridTwo = () => {
               ease: "backInOut",
               delay: 0.3,
             }}
-            cx="160"
-            cy="192"
+            cx="313.5"
+            cy="173.5"
+            r="144.5"
+            fill="#1c1c1c"
+          />
+
+          <motion.circle
+            variants={{
+              hover: {
+                scale: 9,
+              },
+            }}
+            transition={{
+              duration: 1,
+              ease: "backInOut",
+              delay: 0.3,
+            }}
+            cx="313.5"
+            cy="173.5"
+            r="118.5"
+            fill="#282828"
+          />
+          <motion.circle
+            variants={{
+              hover: {
+                scale: 8.5,
+              },
+            }}
+            transition={{
+              duration: 1,
+              ease: "backInOut",
+              delay: 0.3,
+            }}
+            cx="314"
+            cy="173"
             r="97"
             fill="#2F2F2F"
           />
@@ -94,9 +108,9 @@ export const GridTwo = () => {
               ease: "backInOut",
               delay: 0.3,
             }}
-            cx="159.5"
-            cy="192.5"
-            r="69.5"
+            cx="314"
+            cy="173"
+            r="71"
             fill="#363636"
           />
           <motion.circle
@@ -110,8 +124,8 @@ export const GridTwo = () => {
               ease: "backInOut",
               delay: 0.3,
             }}
-            cx="159.5"
-            cy="192.5"
+            cx="313.5"
+            cy="173.5"
             r="50.5"
             fill="#3D3D3D"
           />
@@ -119,7 +133,7 @@ export const GridTwo = () => {
           <motion.circle
             variants={{
               hover: {
-                scale: 5,
+                scale: 8,
               },
             }}
             transition={{
@@ -127,9 +141,9 @@ export const GridTwo = () => {
               ease: "backInOut",
               delay: 0.3,
             }}
-            cx="159.5"
-            cy="192.5"
-            r="30"
+            cx="313.5"
+            cy="173.5"
+            r="31.5"
             fill="#444444"
           />
         </motion.svg>
